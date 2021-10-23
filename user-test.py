@@ -1,4 +1,3 @@
-import pyperclip
 import unittest
 from user import User
 

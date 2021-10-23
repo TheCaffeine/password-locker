@@ -5,7 +5,6 @@ import random
 import string
 import numbers
 import getpass
-import pyperclip
 
 def create_credential(account_name, key):
     '''
