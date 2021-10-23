@@ -50,7 +50,7 @@ To run the application, clone the project and run the following commands
   - lg- login in if an existing user
     - du- display user credentials
     - q- quit the app
-    if 
+    if
     - cc- create new credentials
     - vc- view all credentials
     - ex- exit the page
