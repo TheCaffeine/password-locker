@@ -6,7 +6,7 @@ This is an application that manages user credentials such as username and passwo
 
 ## Author
 
-TheCaffeine 
+TheCaffeine
 
 ## Business Driven Development
 
