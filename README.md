@@ -25,7 +25,7 @@ The user would would be able to:
 ## Installation and Setup Instructions
 
 - python3.8
-- pyperclip
+- poetry
 - pip
 
 ### Contribution
