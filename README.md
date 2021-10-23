@@ -47,7 +47,7 @@ To run the application, clone the project and run the following commands
 There are no known bugs currently
 
 ## Contact Information
-Github contact: [TheCaffeine]()
+Github contact: [TheCaffeine](https://github.com/TheCaffeine/password-locker.git)
 0700331306
 
 ## Licence and Copyright
