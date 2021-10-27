@@ -4,7 +4,11 @@ class Credential:
     """
     credential_list = []
 
-    def __init__(self, account_name, key):
+    def __init__(self, account_name: object, key: object) -> object:
+        """
+
+        @rtype: object
+        """
         self.account_name = account_name
         self.key = key
 
