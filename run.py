@@ -6,7 +6,7 @@ from credential import Credential
 from user import User
 
 
-def create_credential(account_name, key):
+def create_credential(account_name, key: object):
     """
     the function that creates a new credential
     """
