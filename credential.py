@@ -8,7 +8,7 @@ class Credential:
         self.account_name = account_name
         self.key = key
 
-    def save_credentials(self):
+    def save_credentials(self) -> object:
         """
         this method saves the credentials of a user when they create an account
         """
