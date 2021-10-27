@@ -7,6 +7,7 @@ class TestUser(unittest.TestCase):
     Test class defining the user credentials
     """
 
+    # noinspection PyTypeChecker
     def setUp(self) -> object:
         """
         Setup method that runs before each test case

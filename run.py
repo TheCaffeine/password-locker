@@ -103,11 +103,11 @@ def intro():
             auth = getpass.getpass('password:')
             if check_if_user_exists(auth):
                 assert isinstance(auth, object)
-                search_account = find_account(auth)
+                search_account: None = find_account(auth)
 
 
                 while True:
-                    print(f'Welcome {search_account.name}, \n')
+                    print(f'Welcome {search_account : None = find_account(auth)}, \n')
                     print(' Use cc- To create new credentials, vc- To view all your credentials, ex- To exit the account \n ')
                     print('-'*56)
                     short_code = input().lower()
