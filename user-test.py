@@ -22,9 +22,9 @@ method which runs before each test case
         self.assertEqual(self.new_user.password, '19xy13!')
 
     def test_save_user(self):
-        '''
+        """
         Test method to test if the user has been saved on the user list
-        '''
+        """
         self.new_user.save_user()  # method to save user
         self.assertEqual(len(User.user_list), 2)  # expecting 1 !=2 since there is only one contact saved currently
 
@@ -33,22 +33,22 @@ method which runs before each test case
         Test case to check if multiple users can be saved
         """
         self.new_user.save_user()  # method to save user
-        test_user = User('test', 'user', 'any')
+        test_user = User('test', 'user')
         test_user.save_user()
         self.assertEqual(len(User.user_list), 4)
 
     def test_display_users(self):
-        '''
+        """
         test case to check if users are displayed
-        '''
+        """
         self.assertEqual(User.display_users(), User.user_list)
 
     def test_user_exists(self):
-        '''
+        """
         test case to check if the user exists in the user list
-        '''
+        """
         self.new_user.save_user()
-        test_user = User('test', 'name', 'password')
+        test_user = User('test', 'name')
         test_user.save_user()
         user_exits = User.user_exists('test')
         self.assertTrue(user_exits)
