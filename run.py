@@ -102,6 +102,7 @@ def intro():
 
             auth = getpass.getpass('password:')
             if check_if_user_exists(auth):
+                assert isinstance(auth, object)
                 search_account = find_account(auth)
 
 
