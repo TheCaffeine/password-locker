@@ -1,10 +1,10 @@
-from logging import getLevelName
-from user import User
-from credential import Credential
+import getpass
 import random
 import string
-import numbers
-import getpass
+
+from credential import Credential
+from user import User
+
 
 def create_credential(account_name, key):
     '''
