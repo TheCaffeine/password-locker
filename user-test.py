@@ -36,7 +36,26 @@ method which runs before each test case
         test_user = User('test', 'user')
         test_user.save_user()
         self.assertEqual(len(User.user_list), 4)
+# setup and class creation up here
+    def tearDown(self):
+            '''
+            tearDown method that does clean up after each test case has run.
+            '''
+            Contact.contact_list = []
 
+# other test cases here
+    def test_save_multiple_contact(self):
+            '''
+            test_save_multiple_contact to check if we can save multiple contact
+            objects to our contact_list
+            '''
+            self.new_contact.save_contact()
+            test_contact = Contact("Test","user","0712345678","test@user.com") # new contact
+            test_contact.save_contact()
+            self.assertEqual(len(Contact.contact_list),2)
+
+if __name__ == '__main__':
+    unittest.main()
     def test_display_users(self):
         """
         test case to check if users are displayed
