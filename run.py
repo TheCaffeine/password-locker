@@ -92,7 +92,7 @@ def intro():
 
             save_user(create_user(name, password))
             print('\n')
-            print(f'Great! {name} you created an account \n')
+            print('Great! {name} you created an account \n')
             print('\n')
 
         elif short_code =='lg':
@@ -107,7 +107,7 @@ def intro():
 
 
                 while True:
-                    print(f'Welcome {search_account : None = find_account(auth)}, \n')
+                    print('Welcome {search_account : None = find_account(auth)}, \n')
                     print(' Use cc- To create new credentials, vc- To view all your credentials, ex- To exit the account \n ')
                     print('-'*56)
                     short_code = input().lower()
@@ -125,14 +125,14 @@ def intro():
                         if generate == 'g':
                             letters = string.ascii_letters + string.digits
                             generatedpassword = ''.join(random.choice(letters) for i in range(9))
-                            print(f'Your new generated pass word is: {generatedpassword} \n')
+                            print('Your new generated pass word is: {generatedpassword} \n')
                             key = generatedpassword
 
                         elif generate == 'a':
                             print("Enter its password")
                             key = input()
                             print('\n')
-                        print(f'{account_name} has been saved')
+                        print('{account_name} has been saved')
 
                         save_credential(create_credential(account_name,key))
 
@@ -140,7 +140,7 @@ def intro():
                         if display_credentials:
                             print('Well, This is the list of all your accounts and passwords \n')
                             for credential in display_credentials():
-                                print(f'Account name: {credential.account_name} - password: {credential.key}')  
+                                print('Account name: {credential.account_name} - password: {credential.key}')
 
                     elif short_code == 'dc':
                         print('Which credential would you like to delete?')
@@ -160,7 +160,7 @@ def intro():
         elif short_code =='du':
             print('List of all the users \n')
             for user in display_users():
-                print(f"{user.name} \n")
+                print("{user.name} \n")
 
         elif short_code == 'q':
             print('You have quit the app')

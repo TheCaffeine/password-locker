@@ -10,7 +10,7 @@ This is an application that manages user credentials such as username and passwo
 
 ## Business Driven Development
 
-The user would would be able to:
+The user would be able to:
 
 - To create an account for the application or log into the application.
 - Store their existing acounts login details for various accounts that they have registered for.
@@ -61,7 +61,7 @@ There are no known bugs currently
 
 ## Contact Information
 
-Github contact: [TheCaffeine](https://github.com/TheCaffeine/password-locker.git)
+GitHub contact: [TheCaffeine](https://github.com/TheCaffeine/password-locker.git)
 0700331306
 
 ## Licence and Copyright
