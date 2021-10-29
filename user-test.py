@@ -44,14 +44,14 @@ method which runs before each test case
             User.user_list = []
 
 # other test cases here
-    def test_save_multiple_contact(self):
+    def test_save_multiple_users(self):
             '''
-            test_save_multiple_contact to check if we can save multiple contact
-            objects to our contact_list
+            test_save_multiple_user to check if we can save multiple users
+            objects to our user_list
             '''
-            self.new_contact.save_contact()
-            test_contact = User("Test","user","0712345678","test@user.com") # new contact
-            test_contact.save_contact()
+            self.new_user = User('test', 'user').save_user()
+            test_user = User('test', 'user')("Test","user","0712345678","test@user.com") # new user
+            test_user.save_user()
             self.assertEqual(len(User.user_list),2)
 
 if __name__ == '__main__':
