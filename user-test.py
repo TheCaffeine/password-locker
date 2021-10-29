@@ -48,10 +48,14 @@ method which runs before each test case
         test case to check if the user exists in the user list
         """
         self.new_user.save_user()
-        test_user = User('test', 'name')
+        test_user = self.new_method()
         test_user.save_user()
         user_exits = User.user_exists('test')
         self.assertTrue(user_exits)
+
+    def new_method(self):
+        test_user = User('test', 'name')
+        return test_user
 
 
 if __name__ == '__main__':
