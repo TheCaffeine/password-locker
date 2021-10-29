@@ -50,7 +50,7 @@ method which runs before each test case
             objects to our user_list
             '''
             self.new_user = User('test', 'user').save_user()
-            test_user = User('test', 'user')("Test","user","0712345678","test@user.com") # new user
+            test_user = User('test', 'user')("Test","user","TheCaffeine","test@user.com") # new user
             test_user.save_user()
             self.assertEqual(len(User.user_list),2)
 
