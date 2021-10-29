@@ -32,7 +32,7 @@ class TestUser(unittest.TestCase):
         self.new_user.save_user() # method to save user
         test_user = User('test','user','any')
         test_user.save_user()
-        self.assertEqual(len(User.user_list),3)
+        self.assertEqual(len(User.user_list),4)
 
     def test_display_users(self):
         '''
