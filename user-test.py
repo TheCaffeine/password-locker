@@ -54,4 +54,5 @@ class TestUser(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    testsuite = unittest.TestLoader().discover('.')
+    unittest.TextTestRunner(verbosity=1).run(testsuite)
