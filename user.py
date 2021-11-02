@@ -4,13 +4,18 @@ class User:
     """
     user_list = []
 
-    def __init__(self, name, password):  # creates a user instance
+    def __init__(self, name, password)  :  # creates a user instance
+        """
+
+        @rtype: object
+        """
         self.name = name
         self.password = password
 
-    def save_user(self):
+    def save_user(self) -> object:
         """
         this is the method that saves a user to the user-list when they create an account
+        @rtype: object
         """
         User.user_list.append(self)
 
